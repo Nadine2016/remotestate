@@ -11,3 +11,6 @@ output "Output_vars" {
   value = "${data.ibm_schematics_output.vpc.output_values}"
 }
 
+output "remotestate_floating_ip" {
+  value = "${data.ibm_schematics_output.vpc.output_values.sshcommand}"
+}
